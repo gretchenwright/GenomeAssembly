@@ -1,0 +1,38 @@
+digraph {
+	constraint=false rankdir=LR size=15
+	node [shape=circle]
+	AAT
+	AGC
+	ATT
+	CAA
+	CCA
+	CCC
+	CCG
+	CCT
+	CGT
+	CTC
+	GCT
+	TAG [color=red style=filled]
+	TCC [color=red style=filled]
+	TTA
+	TTT
+	TCC -> CCT
+	CCT -> CTC
+	CTC -> TCC
+	CTC -> TCC
+	TAG -> AGC
+	AGC -> GCT
+	GCT -> CTC
+	edge [color=red]
+	TCC -> CCC
+	TCC -> CCA
+	CCC -> CCG
+	CCG -> CGT
+	CGT -> TCC
+	CCA -> CAA
+	CAA -> AAT
+	AAT -> ATT
+	ATT -> TTT
+	TTT -> TTA
+	TTA -> TAG
+}
